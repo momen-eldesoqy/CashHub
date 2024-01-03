@@ -1,0 +1,265 @@
+/*
+Template Name: Velzon - Admin & Dashboard Template
+Author: Themesbrand
+Website: https://themesbrand.com/
+Contact: support@themesbrand.com
+File: Custom Css File
+*/
+
+html{
+    direction: rtl;
+}
+@media (min-width: 768px){
+    [data-layout=vertical][data-sidebar-size=sm] {
+        min-height: 100%;
+    }
+}
+
+/*start index style*/
+#page-topbar{
+   /* background-color: #0093E9;
+    background-image: linear-gradient(1600deg, #0093E9 0%, #80D0C7 100%);*/
+}
+[data-layout="vertical"][data-sidebar="dark"] .navbar-menu{
+  /*  background-color: #08AEEA;
+    background-image: linear-gradient(0deg,#2AF598 0% ,#08AEEA 100% );
+    border-left-color: #08AEEA;*/
+    
+}
+[data-layout="vertical"][data-sidebar="dark"] .navbar-nav .nav-link {
+   /* color: #ffffff;*/
+}
+[data-layout="vertical"][data-sidebar="dark"][data-sidebar-size="sm"] .navbar-brand-box {
+   /* background-color: #08AEEA;*/
+}
+[data-layout="vertical"][data-sidebar-size="sm"] .navbar-menu .navbar-nav .nav-item:hover > a.menu-link {
+   /* background-color: #0093E9;
+    background-image: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%);*/
+}
+#page-topbar h3 , #page-topbar a {
+   /* color: #fff;*/
+}
+.hamburger-icon span{
+    /* background-color: #fff; */
+}
+
+.navbar-menu .navbar-brand-box .logo{
+    line-height: 1;
+    color: #fff;
+    margin: 10px 0;
+}
+.navbar-menu .navbar-brand-box .logo h3{
+    color: #fff;
+    font-size: 25px;
+}
+.navbar-menu .navbar-nav .nav-link[data-bs-toggle=collapse]:after{
+    transform: rotateY(180deg);
+}
+.main-content .card .card-header{
+    /* background: rgb(32,100,138);
+    background: linear-gradient(90deg, rgba(18,174,233,1) 19%, rgba(32,100,138,1) 62%); */
+    /* background: rgb(28,82,115);
+    background: linear-gradient(270deg, rgba(28,82,115,1) 18%, rgba(35,120,168,1) 41%, rgba(26,148,201,1) 78%, rgba(0,183,252,1) 100%); */
+    /*background-color: #0093E9;
+    /*background-image: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%);*/
+
+    padding: 8px 10px;
+}
+.main-content .card .card-header h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+}
+.lefticon-accordion .accordion-button:not(.collapsed)::after {
+    left: 20px;
+}
+.lefticon-accordion .accordion-button::after {
+    left: 14px;
+}
+.analysis{
+    flex-direction: column;
+    align-items: center;
+}
+.analysis p{
+    font-size: 18px;
+}
+
+/*start employee details style*/
+
+.employee-details .methods{
+    display: flex;
+    justify-content: space-between;
+   align-items: flex-start;
+   align-content: center;
+}
+
+.employee-details .personal-information h5 , .taamem .taamem-details h5{
+    color: #405189;
+    margin-right: 10px;
+}
+.employee-details .personal-information ul , .taamem .taamem-details ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+.employee-details .personal-information ul li , .taamem .taamem-details ul li{
+    margin-top: 10px;
+}
+.employee-details .personal-information ul li span:first-child , .taamem .taamem-details ul li span:first-child{
+    color: #405189;
+    margin-left: 10px;
+}
+.employee-details .personal-information ul li span:last-child , .taamem .taamem-details ul li span:last-child{
+    font-weight: 600;
+}
+.dateBox{
+    display: flex;
+    align-items: center;
+    background-color: #78b1aa;
+    
+
+}
+.dateBox .icon{
+    background-color: #45958c;
+    padding: 10px;
+}
+.dateBox .icon i{
+    font-size: 40px;
+    color: #fff;
+}
+.dateBox .date{
+    background-color: #78b1aa;
+    color: #fff;
+    padding: 10px;
+}
+.print-box{
+    display: flex;
+}
+.print-box .print-choices{
+    text-align: center;
+    margin: 0 5px;
+}
+.print-box .print-choices a{
+    border: 1px solid rgb(185, 185, 185);
+    padding: 5px 25px;
+    border-radius: 15px;
+}
+.print-box .print-choices h5{
+    color: #405189;
+}
+.more-details{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* start slary details page*/
+.slary-doc .table caption{
+    font-size: 18px;
+}
+.slary-doc .instructions .card-body h3 , .attendance .instructions .card-body h3{
+    color: #d90707;
+}
+.slary-doc .instructions .card-body ul , .attendance .instructions .card-body ul{
+    padding: 0;
+    margin-right: 10px;
+}
+
+/*start attendance page*/
+.attendance .form input , .attendance .form select{
+    width: auto;
+}
+.attendance .form{
+    align-items: baseline;
+}
+
+/* start make complaint page*/
+.make-complaint .complaint-section{
+    width: 80%;
+    margin: auto;
+}
+
+/* start taamem page*/
+.taamem .card .card-header{
+    background: #fff;
+}
+
+/*start emplyee performance page*/
+.employee-performance .emp-card .card-header{
+    padding: 5px;
+    background: #fff;
+}
+.employee-performance .emp-card .card-header h6{
+    color: #000;
+}
+/* start add certificates page*/
+.add-certificates .nav-link.active ,.submit-for-vacancy .nav-link.active {
+    background-color: #0ab39c;
+}
+
+/* start submit for vacancy page */
+.submit-for-vacancy .tab-content{
+    margin: 30px;
+}
+.submit-for-vacancy input[type='radio']{
+    cursor: pointer;
+}
+.submit-for-vacancy .outline{
+    width: 60px ;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    background-color: #80D0C7;
+}
+.submit-for-vacancy .outline.outline-gray{
+    background-color: #eee;
+}
+.submit-for-vacancy .outline span {
+    display: inline-block;
+    border: 2px solid #405189;
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    
+}
+.submit-for-vacancy .btn{
+    margin: 0 5px;
+}
+.submit-for-vacancy .form-select{
+    width: auto;
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+/* start submit for task page*/
+.submit-for-task .input-label {
+    width: 25%;
+}
+.submit-for-task input.form-control , 
+.submit-for-task textarea.form-control {
+    width: 70%;
+    display: inline-block;
+}
+.sitemap {
+    margin-right: 0;
+}
+.sitemap .page-content {
+    padding: 0;
+}
+.sitemap footer {
+    right: 0;
+}
+/*start responsive style*/
+@media screen and (max-width: 768px) {
+    .employee-details .methods , .print-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .print-box .print-choices{
+        margin-top: 15px;
+    }
+}

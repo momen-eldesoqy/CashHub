@@ -1,0 +1,57 @@
+﻿@model CashHub.Models.Branch
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row">
+    <div class="col-xxl-6">
+        <div class="card">
+            <div class="card-header align-items-center d-flex">
+                <h4 class="card-title mb-0 flex-grow-1">إنشاء فرع جديد</h4>
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                <div class="live-preview">
+                    <form asp-action="Create" class="row g-3">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="col-md-12">
+                            <label asp-for="BranchRefNum" for="fullnameInput" class="form-label"></label>
+                            <input asp-for="BranchRefNum" type="text" class="form-control" id="fullnameInput">
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="BranchName" for="inputEmail4" class="form-label"></label>
+                            <input asp-for="BranchName" type="text" class="form-control" id="inputEmail4">
+                            <span asp-validation-for="BranchName" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6">
+                            <label asp-for="BranchPhone" for="inputPassword4" class="form-label"></label>
+                            <input asp-for="BranchPhone" type="text" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="BranchAddress" for="inputAddress" class="form-label">Address</label>
+                            <input asp-for="BranchAddress" type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="col-12">
+                            <label asp-for="HubId" class="control-label"></label>
+                            <select asp-for="HubId" class="form-control" asp-items="ViewBag.HubId"></select>
+                        </div>
+                        <div class="col-12">
+                            <div class="text-end">
+                                <input type="submit" value="Create" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div><!--end row-->
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

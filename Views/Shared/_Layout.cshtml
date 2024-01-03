@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="web portal for online transactions" name="description" />
+    <meta content="Fawry" name="author" />
+    <title>@ViewData["Title"] - CashHub</title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+    <!-- Layout config Js -->
+    <script src="~/js/layout.js"></script>
+    <!-- Bootstrap Css -->
+    <link href="~/css/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" asp-append-version="true"/>
+    <!-- Icons Css -->
+    <link href="~/css/icons.min.css" rel="stylesheet" type="text/css" asp-append-version="true"/>
+    <!-- App Css-->
+    <link href="~/css/app-rtl.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <!-- custom Css-->
+    <link href="~/css/custom.css" rel="stylesheet" type="text/css" asp-append-version="true">
+</head>
+<body>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="layout-width">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <button type="button" class="btn btn-sm px-3 fs-16 header-item vertical-menu-btn topnav-hamburger"
+                                id="topnav-hamburger-icon">
+                            <span class="hamburger-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </button>
+                    </div>
+                    <h3>مرحبا بكم في بوابة الموظفين</h3>
+                    <a href="#">خروج</a>
+                </div>
+            </div>
+        </header>
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <a href="index.html" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="images/users/user-dummy-img.jpg" alt="" class="rounded-circle avatar-sm">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="images/users/user-dummy-img.jpg" alt="" class="rounded-circle avatar-md">
+                        <h3>مؤمن الدسوفي يونس</h3>
+                        <span>مدير ادارة التطبيقات بتطوير الانظمة</span>
+                    </span>
+                </a>
+                <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+                        id="vertical-hover">
+                    <i class="ri-record-circle-line"></i>
+                </button>
+            </div>
+
+            <div id="scrollbar">
+                <div class="container-fluid">
+                    <div id="two-column-menu">
+                    </div>
+                    <ul class="navbar-nav" id="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" asp-controller="Branches">
+                                <i class="ri-dashboard-2-line"></i>
+                                <span data-key="t-dashboards">الفروع</span>
+                            </a>
+
+                        </li> <!-- end Dashboard Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" asp-controller="Subs">
+                                <i class="ri-apps-2-line"></i>
+                                <span data-key="t-apps">المتاجر</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" asp-controller="Lines">
+                                <i class="ri-layout-3-line"></i>
+                                <span data-key="t-layouts">الخطوط</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" asp-controller="Hubs">
+                                <i class="ri-account-circle-line"></i> <span data-key="t-authentication">المستخدمين</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" asp-controller="Transactions">
+                                <i class="ri-pages-line"></i> <span data-key="t-pages">الإعدادت</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- Vertical Overlay-->
+        <div class="vertical-overlay"></div>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content attendance">
+            <div class="page-content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © MO2.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design & Develop by EGY CODE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- JAVASCRIPT -->
+    <script src="~/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/libs/node-waves/waves.min.js"></script>
+    <script src="~/libs/feather-icons/feather.min.js"></script>
+    <script src="~/js/pages/plugins/lord-icon-2.1.0.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <!-- Chart JS -->
+    <script src="~/libs/chart.js/chart.min.js"></script>
+
+    <!-- chartjs init -->
+    <script src="~/js/pages/chartjs.init.js"></script>
+    <!-- App js -->
+    <script src="~/js/app.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

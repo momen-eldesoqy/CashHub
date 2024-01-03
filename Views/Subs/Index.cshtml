@@ -1,0 +1,214 @@
+﻿@model IEnumerable<CashHub.Models.Sub>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- start page title -->
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+            <h4 class="mb-sm-0">المتاجر</h4>
+
+            <div class="page-title-right">
+                <ol class="breadcrumb m-0">
+                    <li class="breadcrumb-item"><a href="javascript: void(0);">الخريطه</a></li>
+                    <li class="breadcrumb-item active">المتاجر</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- end page title -->
+<div class="row">
+    <div class="col-xxl-3 col-md-6">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex mb-3">
+                    <div class="flex-grow-1">
+                        <lord-icon src="https://cdn.lordicon.com/fhtaantg.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
+                        </lord-icon>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="javascript:void(0);" class="badge badge-soft-warning badge-border">BTC</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-info badge-border">ETH</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-primary badge-border">USD</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-danger badge-border">EUR</a>
+                    </div>
+                </div>
+                <h3 class="mb-2">$<span class="counter-value" data-target="74858">0</span><small class="text-muted fs-13">.68k</small></h3>
+                <h6 class="text-muted mb-0">Available Balance (USD)</h6>
+            </div>
+        </div><!--end card-->
+    </div><!--end col-->
+    <div class="col-xxl-3 col-md-6">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex mb-3">
+                    <div class="flex-grow-1">
+                        <lord-icon src="https://cdn.lordicon.com/qhviklyi.json" trigger="loop" colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px"></lord-icon>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="javascript:void(0);" class="badge badge-soft-warning badge-border">BTC</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-info badge-border">ETH</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-primary badge-border">USD</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-danger badge-border">EUR</a>
+                    </div>
+                </div>
+                <h3 class="mb-2">$<span class="counter-value" data-target="74361">0</span><small class="text-muted fs-13">.34k</small></h3>
+                <h6 class="text-muted mb-0">Send (Previous Month)</h6>
+            </div>
+        </div><!--end card-->
+    </div><!--end col-->
+    <div class="col-xxl-3 col-md-6">
+        <div class="card card-animate">
+            <div class="card-body">
+                <div class="d-flex mb-3">
+                    <div class="flex-grow-1">
+                        <lord-icon src="https://cdn.lordicon.com/yeallgsa.json"
+                                   trigger="loop"
+                                   colors="primary:#405189,secondary:#0ab39c"
+                                   style="width:55px;height:55px">
+                        </lord-icon>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="javascript:void(0);" class="badge badge-soft-warning badge-border">BTC</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-info badge-border">ETH</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-primary badge-border">USD</a>
+                        <a href="javascript:void(0);" class="badge badge-soft-danger badge-border">EUR</a>
+                    </div>
+                </div>
+                <h3 class="mb-2">$<span class="counter-value" data-target="97685">0</span><small class="text-muted fs-13">.22k</small></h3>
+                <h6 class="text-muted mb-0">Receive (Previous Month)</h6>
+            </div>
+        </div><!--end card-->
+    </div><!--end col-->
+    <div class="col-xxl-3 col-md-6">
+        <div class="swiper default-swiper rounded">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card card-animate">
+                        <div class="card-body bg-soft-warning">
+                            <div class="d-flex mb-3">
+                                <div class="flex-grow-1">
+                                    <lord-icon src="https://cdn.lordicon.com/vaeagfzc.json" trigger="loop"
+                                               colors="primary:#405189,secondary:#0ab39c" style="width:55px;height:55px">
+                                    </lord-icon>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <a href="javascript:void(0);" class="fw-medium">Bitcoin (BTC)</a>
+                                </div>
+                            </div>
+                            <h3 class="mb-2">$245<small class="text-muted fs-13">.65k</small></h3>
+                            <h6 class="text-muted mb-0">Send - Receive (Previous Month)</h6>
+                        </div>
+                    </div><!--end card-->
+                </div>
+            </div>
+        </div><!--end swiper-->
+    </div><!--end col-->
+</div><!--end row-->
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<div class="card" id="contactList">
+    <div class="card-header">
+        <div class="row align-items-center g-3">
+            <div class="col-md-3">
+                <h5 class="card-title mb-0">كل الفروع</h5>
+            </div><!--end col-->
+            <div class="col-md-auto ms-auto">
+                <div class="d-flex gap-2">
+                    <div class="search-box">
+                        <input type="text" class="form-control search" placeholder="Search for transactions...">
+                        <i class="ri-search-line search-icon"></i>
+                    </div>
+                </div>
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end card-header-->
+    <div class="card-body">
+        <div class="table-responsive table-card">
+            <table class="table align-middle table-nowrap" id="customerTable">
+                <thead class="table-light text-muted">
+                    <tr>
+                        <th class="sort" data-sort="name" scope="col" style="width: 60px;"></th>
+                        <th class="sort" data-sort="date" scope="col">
+                            @Html.DisplayNameFor(model => model.SubId)
+                        </th>
+                        <th class="sort" data-sort="currency_name" scope="col">
+                            @Html.DisplayNameFor(model => model.SubName)
+                        </th>
+                        <th class="sort" data-sort="form_name" scope="col">
+                            @Html.DisplayNameFor(model => model.SubAddress)
+                        </th>
+                        <th class="sort" data-sort="to_name" scope="col">
+                            @Html.DisplayNameFor(model => model.SubPhone)
+                        </th>
+                        <th class="sort" data-sort="details" scope="col">
+                            @Html.DisplayNameFor(model => model.SubRefNum)
+                        </th>
+                        <th class="sort" data-sort="details" scope="col">
+                            @Html.DisplayNameFor(model => model.CreatedOn)
+                        </th>
+                    </tr><!--end tr-->
+                </thead>
+                <tbody class="list form-check-all">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="id" style="display:none;"><a href="javascript:void(0);" class="fw-medium link-primary">#VZ001</a></td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SubId)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SubName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SubAddress)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SubPhone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SubRefNum)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CreatedOn)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.SubId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.SubId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.SubId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table><!--end table-->
+            <div class="noresult" style="display: none">
+                <div class="text-center">
+                    <lord-icon src="https://cdn.lordicon.com/msoeawqm.json" trigger="loop"
+                               colors="primary:#405189,secondary:#0ab39c" style="width:75px;height:75px">
+                    </lord-icon>
+                    <h5 class="mt-2">Sorry! No Result Found</h5>
+                    <p class="text-muted mb-0">
+                        We've searched more than 150+ transactions We did not find any
+                        transactions for you search.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <div class="pagination-wrap hstack gap-2">
+                <a class="page-item pagination-prev disabled" href="#">
+                    Previous
+                </a>
+                <ul class="pagination listjs-pagination mb-0"></ul>
+                <a class="page-item pagination-next" href="#">
+                    Next
+                </a>
+            </div>
+        </div>
+    </div><!--end card-body-->
+</div><!--end card-->
